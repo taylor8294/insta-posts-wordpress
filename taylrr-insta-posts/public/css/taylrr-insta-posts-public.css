@@ -1,0 +1,59 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .insta-posts-row {
+ 	overflow: hidden;
+ }
+ .insta-posts-row:after {
+ 	content:'';
+ 	clear: both;
+ }
+ .insta-posts-image-wrap {
+ 	float:left;
+  	position: relative;
+    overflow: hidden;
+ }
+ .insta-posts-image {
+    display: block;
+ 	width: 100%;
+ 	padding-bottom: 100%;
+ 	background-size: cover;
+    transition: transform 1s;
+
+ }
+
+/*
+ * Footer button feature
+ */
+.insta-posts-footer{
+    position:relative;
+}
+.insta-posts-footer .insta-posts-image:hover {
+  transform: scale(1.12)
+}
+.insta-posts-footer-overlay{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    padding: 0 18px;
+    margin-left: -57.5px;
+    margin-top: -17px;
+    z-index: 1;
+    background: #fff;
+    color: #535353;
+    font-size: 14px;
+    letter-spacing: -.02em;
+    line-height: 35px;
+    -webkit-transition: none;
+    opacity: 0.5;
+    transition: opacity 0.5s ease 1s;
+}
+.insta-posts-footer:hover .insta-posts-footer-overlay {
+    opacity: 1 !important;
+    transition: all 0.5s ease 0s;
+}
+.insta-posts-footer-overlay:hover,.insta-posts-footer-overlay:active,.insta-posts-footer-overlay:focus {
+    text-decoration: none;
+}
